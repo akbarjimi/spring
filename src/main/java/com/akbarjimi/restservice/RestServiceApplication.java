@@ -1,6 +1,7 @@
 package com.akbarjimi.restservice;
 
 import com.akbarjimi.restservice.storage.StorageProperties;
+import com.akbarjimi.restservice.storage.StorageService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -30,10 +31,12 @@ public class RestServiceApplication {
 
     @Bean
     @Profile("!test")
-    public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
+    public CommandLineRunner run(RestTemplate restTemplate, StorageService storageService) throws Exception {
         return args -> {
             Quote quote = restTemplate.getForObject("http://localhost:8080/api/random", Quote.class);
             log.info(quote.toString());
+            storageService.deleteAll();
+            storageService.init();
         };
     }
 
