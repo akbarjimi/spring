@@ -9,14 +9,18 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.akbarjimi</groupId>
-    <artifactId>rest-service</artifactId>
+    <artifactId>restservice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>rest-service</name>
-    <description>Building a RESTful Web Service</description>
+    <name>restservice</name>
+    <description>Getting Started Guides</description>
     <properties>
         <java.version>17</java.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

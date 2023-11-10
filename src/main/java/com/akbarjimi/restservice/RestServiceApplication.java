@@ -1,18 +1,20 @@
 package com.akbarjimi.restservice;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.akbarjimi.restservice.storage.StorageProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
 import org.springframework.web.client.RestTemplate;
 
+
 @SpringBootApplication
+@EnableConfigurationProperties(StorageProperties.class)
 public class RestServiceApplication {
 
     private static final Logger log = LoggerFactory.getLogger(RestServiceApplication.class);
