@@ -6,6 +6,7 @@
 /media/sf_DOD/src/main/java/com/akbarjimi/restservice/Quote.java
 /media/sf_DOD/src/main/java/com/akbarjimi/restservice/Value.java
 /media/sf_DOD/src/main/java/com/akbarjimi/restservice/FileUploadController.java
+/media/sf_DOD/src/main/java/com/akbarjimi/restservice/redis/Receiver.java
 /media/sf_DOD/src/main/java/com/akbarjimi/restservice/GreetingController.java
 /media/sf_DOD/src/main/java/com/akbarjimi/restservice/storage/FileSystemStorageService.java
 /media/sf_DOD/src/main/java/com/akbarjimi/restservice/RestServiceApplication.java

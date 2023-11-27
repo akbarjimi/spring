@@ -7,5 +7,6 @@ com/akbarjimi/restservice/storage/StorageProperties.class
 com/akbarjimi/restservice/storage/FileSystemStorageService.class
 com/akbarjimi/restservice/Quote.class
 com/akbarjimi/restservice/RestServiceApplication.class
+   com/akbarjimi/restservice/redis/Receiver.class
 com/akbarjimi/restservice/storage/StorageService.class
 com/akbarjimi/restservice/Greeting.class
